@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.recipe-row {
+  img {
+    width: fit-content;
+  }
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.2s;
+  max-width: 700px;
+}
+
+figcaption {
+  background-color: whitesmoke;
+  border: thick;
+  font-family: 'Balthazar', serif;
+}
