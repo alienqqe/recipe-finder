@@ -34,7 +34,11 @@ function App() {
         isInitialRender={isInitialRender}
         setInitialRender={setInitialRender}
       />
-      {isInitialRender ? '' : <RecipeRow recipe={recipe} />}
+      {isInitialRender ? (
+        ''
+      ) : (
+        <RecipeRow recipe={recipe} setRecipe={setRecipe} />
+      )}
     </>
   )
 }

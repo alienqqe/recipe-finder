@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -7,18 +7,47 @@
 }
 .recipe-row {
   img {
+    height: fit-content;
     width: fit-content;
   }
+
+  .image-container {
+    position: relative;
+    transition: transform 0.2s;
+    max-width: 350px;
+  }
+
+  .image-text {
+    background-color: white;
+    border: thick;
+    max-width: 202px;
+    a {
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    p {
+      text-transform: uppercase;
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: #313233;
 }
 
-.image-container {
-  position: relative;
-  transition: transform 0.2s;
-  max-width: 700px;
+a:visited {
+  text-decoration: none;
+  color: #313233;
 }
-
-figcaption {
-  background-color: whitesmoke;
-  border: thick;
-  font-family: 'Balthazar', serif;
+a:link {
+  text-decoration: none;
+  color: #313233;
+}
+a:active {
+  text-decoration: none;
+  color: #313233;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #bd7f3c;
 }
